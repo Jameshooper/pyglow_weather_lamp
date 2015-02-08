@@ -20,12 +20,17 @@ if temperature <-20:
    pyglow.color("blue", 255)
 elif temperature < -10:
      pyglow.color("blue", 255)
-     pyglow.color("green", 225)
+     pyglow.color("green", 200)
 elif temperature < -5:
-     pyglow.color("blue", 180)
      pyglow.color("green", 255)
+     pyglow.color("blue", 255)
+     pyglow.color("orange", 150)
+     pyglow.color("yellow", 255)
 elif temperature < 0:
      pyglow.color("green", 255)
+     pyglow.color("blue", 120)
+     pyglow.color("orange", 150)
+     pyglow.color("yellow", 255)
 elif temperature < 5:
      pyglow.color("green", 255)
      pyglow.color("yellow", 200)
