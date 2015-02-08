@@ -6,8 +6,12 @@ import urllib
 
 pyglow = PyGlow() #Setup piglow and turn all off
 pyglow.all(0)
-
-
+pyglow.all(brightness=255, speed=500, pulse=True)
+sleep(1)
+pyglow.all(brightness=255, speed=500, pulse=True)
+sleep(1)
+pyglow.all(brightness=255, speed=500, pulse=True)
+sleep(1)
 yahoo_result = pywapi.get_weather_from_yahoo('FIXX0031') #This gets the weather from Yahoo. Set the code for your city: https://www.edg3.uk/snippets/weather-location-codes/
 temp = yahoo_result['condition']['temp'] # This gets only the temperature from the conditions
 print temp
